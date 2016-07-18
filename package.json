@@ -1,0 +1,7 @@
+{
+	"name" : "serverless-stories-lambda",
+	"version" : "1.0.0",
+	"dependencies" : {
+		"http-server" : "latest"
+	}
+}

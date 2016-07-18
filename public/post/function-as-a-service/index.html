@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Serverless Stories</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../../assets/jsbn.js"></script>
+    <script src="../../assets/jsbn2.js"></script>
+    <script src="../../assets/sjcl.js"></script>
+    <script src="../../assets/moment.min.js"></script>
+    <script src="../../assets/aws-cognito-sdk.min.js"></script>
+    <script src="../../assets/amazon-cognito-identity.min.js"></script>
+    <script src="../../assets/aws-sdk.min.js"></script>
+    <script src="../../assets/gateway/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script src="../../assets/gateway/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script src="../../assets/gateway/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script src="../../assets/gateway/lib/apiGatewayCore/utils.js"></script>
+    <script src="../../assets/gateway/lib/axios/dist/axios.standalone.js"></script>
+    <script src="../../assets/gateway/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script src="../../assets/gateway/lib/CryptoJS/rollups/sha256.js"></script>
+    <script src="../../assets/gateway/lib/CryptoJS/components/enc-base64.js"></script>
+    <script src="../../assets/gateway/lib/CryptoJS/components/hmac.js"></script>
+    <script src="../../assets/gateway/lib/url-template/url-template.js"></script>
+    <script src="../../assets/gateway/apigClient.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Serverless Stories</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Top Stories</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li id="login"></li>
+              <li id="user"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="col-sm-12">
+        <h1>Function as a Service (FaaS)</h1>
+        
+        <p>Lorem ipsum dolor sit amet, dolor eu nec, a etiam elit sed, iaculis vehicula nam suspendisse orci arcu, pellentesque est sit fringilla. Vehicula et ut. Elit felis fusce in in sollicitudin, a ac venenatis fermentum egestas scelerisque sit, morbi vehicula ultricies, fusce sit feugiat primis amet, lobortis lacinia curabitur integer. Pretium dignissim enim eget, nostra vulputate ipsum proin dui, arcu ad ut et augue nulla vel. Fermentum ante, ea et ornare amet in dolor, vestibulum quis erat, pulvinar mollis, in mollis eget ut auctor nunc mollis. Hendrerit a adipiscing pede nulla quisque donec, nec nulla vitae quisque. In sagittis donec accumsan dolor massa in.</p>
+
+        <p>Convallis sodales in mi mollis maecenas massa, sed id, aenean eum sodales a varius proin vero, sit magna massa. Nec rhoncus duis, velit sed nulla lobortis a vestibulum condimentum, consectetuer auctor justo nibh odio felis turpis. Turpis eos, aliquet metus fringilla eleifend tincidunt felis nulla. Turpis molestie tellus ante vestibulum, turpis vestibulum, eget urna arcu scelerisque et, nonummy sapien vivamus ac, quis libero. Donec ac consequat accumsan ipsum neque, lorem at mi fermentum quis. Leo in aliquam nam erat, vitae amet, montes aliquet urna lacus. Placerat ullamcorper, placerat ut et quam est. Aenean adipiscing arcu dicta varius ante massa, nunc arcu quisque mi eget libero, elit non, suscipit suscipit ullamcorper sem risus.</p>
+
+        <p>Sodales proin montes condimentum vitae dignissimos sollicitudin, scelerisque eu aenean quis eros eget quisque, vel amet sem enim dolor, massa in et sollicitudin tincidunt non phasellus, facilisis mollis senectus urna. Facilisis vel dapibus eu purus habitasse, ac eget arcu dui libero hymenaeos aliquam, justo quis eu mus consequat vitae sed, elit posuere. Ultricies aliquam adipiscing purus morbi mollis. Tortor laoreet sit ut et praesent, fringilla cras, tortor amet volutpat nec est ut vestibulum. Varius diam in nunc, rhoncus sit et amet non etiam amet, sit vehicula praesent. Ridiculus maecenas, praesent dolorum molestie ipsum molestie, tristique accumsan nec tincidunt ullamcorper nullam pede, ultrices fusce sit ante nulla. Sollicitudin quia risus vehicula sed a nunc, aliquet suspendisse et. Neque nam molestie vehicula vel, lacus sollicitudin est erat arcu. Elit cras quis blandit vestibulum interdum pulvinar, turpis viverra tellus eu, nam semper neque sit ligula. Quis quis nulla gravida eget vestibulum luctus, fusce integer vitae elit enim suspendisse ut, nec pellentesque etiam eu turpis congue libero, augue eget scelerisque sed donec mi. Fermentum ut amet massa, sapien senectus hac, vehicula sed vivamus. Integer commodo dui vel euismod vivamus, lacus ornare, phasellus mi donec maecenas, nam et vestibulum euismod.</p>
+        
+        <p>A eget, ultricies ultricies metus congue quis, faucibus arcu. Libero sapien, vel risus lectus nec nibh diam sem, tellus sagittis, mus taciti sed et in. Sed sed est vitae sed tincidunt. Dictum tempus, velit et nunc, et ridiculus mollis curabitur risus praesent. Volutpat elit sequi pellentesque enim blandit, diam dignissim lorem id id, in sapien molestie elit morbi vestibulum est. Elit vitae donec libero magna ut ipsum, scelerisque ut phasellus eget sed id vulputate, wisi phasellus sed sit, fames lacus a integer non ultricies, facilisis nullam ligula amet ante etiam. Duis montes, velit lectus, mattis nunc eget odio sed faucibus, augue dolor ante amet lacus, eleifend luctus volutpat a natoque luctus penatibus. Nam dui aliquet arcu ligula libero, et adipiscing mauris at urna nec, pede neque nullam arcu in morbi tempus, turpis eget et vitae lacinia mattis. Vitae nunc leo sed non, non dolor nibh amet bibendum ut, quis sit et, felis ligula, suscipit libero non elit cras.</p>
+    </div>
+  <script src="../../assets/app.js"></script>
+  </body>
+</html>
