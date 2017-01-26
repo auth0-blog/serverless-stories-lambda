@@ -1,6 +1,6 @@
 # Serverless Stories (Lambda Implementation)
 
-Serverless Stories is a static blog that is enhanced with AWS Lambda. It is a sample application showing you can build serverless applications with AWS Lambda. Check out the blog post [here]() and a comparison to Webtask [here](https://auth0.com/blog/2016/06/28/building-serverless-apps-with-webtask/).
+Serverless Stories is a static blog that is enhanced with AWS Lambda. It is a sample application showing you can build serverless applications with AWS Lambda. Check out the blog post [here](https://auth0.com/blog/building-serverless-apps-with-aws-lambda/) and a comparison to Webtask [here](https://auth0.com/blog/2016/06/28/building-serverless-apps-with-webtask/).
 
 ![Serverless Stories](https://cdn.auth0.com/blog/webtask/app.png)
 
@@ -9,7 +9,7 @@ Serverless Stories is a static blog that is enhanced with AWS Lambda. It is a sa
 1. Clone the repo
 2. Install the http-server by running `npm intall http-server -g` (you will need Node and NPM)
 3. Run `http-server` and navigate to `localhost:8080` to see the blog.
-4. Read the blog post located [here]() to learn how to work with AWS Lambda and get it implemented in the app.
+4. Read the blog post located [here](https://auth0.com/blog/building-serverless-apps-with-aws-lambda/) to learn how to work with AWS Lambda and get it implemented in the app.
 
 ## What is Auth0?
 
