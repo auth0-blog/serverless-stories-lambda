@@ -7,7 +7,7 @@ Serverless Stories is a static blog that is enhanced with AWS Lambda. It is a sa
 ## Running the App
 
 1. Clone the repo
-2. Install the http-server by running `npm intall http-server -g` (you will need Node and NPM)
+2. Install the http-server by running `npm install http-server -g` (you will need Node and NPM)
 3. Run `http-server` and navigate to `localhost:8080` to see the blog.
 4. Read the blog post located [here](https://auth0.com/blog/building-serverless-apps-with-aws-lambda/) to learn how to work with AWS Lambda and get it implemented in the app.
 
